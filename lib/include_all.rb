@@ -12,7 +12,15 @@ module IncludeAll
 
   def include_all(*args)
     added = list_objects()
-    (added - $startup).each { |m| include m }
+      (added - $startup).each {
+        |m|
+        begin
+          include m
+        rescue TypeError => e
+          # Do nothing
+         end
+      }
+    $startup = added
   end
 
   # Lists objects in the ObjectSpace on demand

@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.homepage = "http://github.com/dluman/include_all"
-  s.license = "CC0" 
+  s.license = "CC0-1.0" 
 
   s.has_rdoc = true
   s.rdoc_options = %w(--title require_all --main README.md --line-numbers)

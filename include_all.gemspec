@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.summary = "A wonderfully simple way to include modules from your code"
 
   s.files = `git ls-files`.split($\)
-  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  s.test_files = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
 
   s.homepage = "http://github.com/dluman/include_all"
